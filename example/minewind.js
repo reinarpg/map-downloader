@@ -1,4 +1,4 @@
-const mc = require('minecraft-protocol')
+const mc = require('reinarpg-protocol')
 const { MapSaver } = require('map-downloader')
 const path = require('path')
 const { EventEmitter } = require('events')
@@ -31,7 +31,7 @@ server.on('login', function (client) {
   let endedClient = false
   let endedTargetClient = false
 
-  const ChatMessage = require('prismarine-chat')(version)
+  const ChatMessage = require('reinarpg-chat')(version)
 
   const saver = new MapSaver(version)
   const serverListener = new DataEmitter()

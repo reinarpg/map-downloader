@@ -1,4 +1,4 @@
-const mp = require('minecraft-protocol')
+const mp = require('reinarpg-protocol')
 const { MapSaver } = require('map-downloader')
 const path = require('path')
 
