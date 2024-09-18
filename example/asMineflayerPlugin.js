@@ -1,4 +1,4 @@
-const mc = require('mineflayer')
+const mc = require('reinarpg-bot')
 const { mapDownloader } = require('../')
 const path = require('path')
 

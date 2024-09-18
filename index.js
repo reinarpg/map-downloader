@@ -17,7 +17,7 @@ const EventEmitter = require('events')
  */
 
 /**
- * @param {import('mineflayer').Bot} bot
+ * @param {import('reinarpg-bot').Bot} bot
  */
 function mineflayerPlugin (bot, options = {}) {
   if (!supportedVersions.includes(bot.majorVersion)) {
@@ -58,8 +58,8 @@ class MapSaver extends EventEmitter {
     this.version = version
     this.maps = {}
     // Mojang fixed columns and rows having negative numbers for 1.17
-    this.fullColumnRow = require('minecraft-data')(this.version).version['>']('1.16.5') ? 128 : -128
-    this.majorVersion = require('minecraft-data')(this.version).version.majorVersion
+    this.fullColumnRow = require('reinarpg-data')(this.version).version['>']('1.16.5') ? 128 : -128
+    this.majorVersion = require('reinarpg-data')(this.version).version.majorVersion
   }
 
   /** @param {MapPacket} data */

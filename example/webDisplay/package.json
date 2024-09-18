@@ -4,7 +4,7 @@
   "main": "web.js",
   "dependencies": {
     "express": "^4.17.1",
-    "mineflayer": "^4.0.0"
+    "reinarpg-bot": "^4.0.0"
   },
   "devDependencies": {},
   "scripts": {

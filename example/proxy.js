@@ -1,5 +1,5 @@
 const mc = require('minecraft-protocol')
-const { MapSaver } = require('mineflayer-item-map-downloader')
+const { MapSaver } = require('map-downloader')
 const path = require('path')
 
 const states = mc.states

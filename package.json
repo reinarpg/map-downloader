@@ -1,5 +1,5 @@
 {
-  "name": "mineflayer-item-map-downloader",
+  "name": "map-downloader",
   "version": "1.2.0",
   "description": "Download minecraft map information and save if as png's",
   "main": "index.js",
@@ -10,10 +10,10 @@
   "author": "Ic3Tank",
   "license": "ISC",
   "dependencies": {
-    "mineflayer": "^4.3.0",
+    "reinarpg-bot": "github:reinarpg/reinarpg-bot",
     "sharp": "^0.30.6"
   },
   "devDependencies": {
-    "mineflayer-item-map-downloader": "file:./"
+    "map-downloader": "file:./"
   }
 }

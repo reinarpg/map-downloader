@@ -13,11 +13,11 @@ Automatically downloads item maps when in render distance of an item frame with 
 ## Installing
 1. Install the plugin with npm
 ```bash
-npm i --save mineflayer-item-map-downloader
+npm i --save map-downloader
 ```
-2. Load the plugin with the mineflayer plugin API
+2. Load the plugin with the reinarpg-bot plugin API
 ```javascript
-const { mapDownloader } = require('mineflayer-item-map-downloader')
+const { mapDownloader } = require('map-downloader')
 
 bot.loadPlugin(mapDownloader) // load it before spawning to get all maps
 ```
@@ -34,11 +34,11 @@ Activates map downloading. The downloader is active by default. Note: This funct
 Deactivate map downloading. Note: This function is only available after `inject_allowed` has fired.
 
 ## Options
-This plugin extends the `BotOptions` type from mineflayer. Add them to the createBot options when creating the bot. You can also change them later by changing the `bot.mapDownloader` properties.
+This plugin extends the `BotOptions` type from reinarpg-bot. Add them to the createBot options when creating the bot. You can also change them later by changing the `bot.mapDownloader` properties.
 
 #### Example for an option
 ```javascript
-const bot = mineflayer.createBot({
+const bot = reinarpg-bot.createBot({
   "mapDownloader-outputDir": "some/output/dir"
 })
 ```

@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
-const { mapDownloader } = require('mineflayer-item-map-downloader')
-const mc = require('mineflayer')
+const { mapDownloader } = require('map-downloader')
+const mc = require('reinarpg-bot')
 const path = require('path')
 
 const bot = mc.createBot({

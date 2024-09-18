@@ -1,5 +1,5 @@
 import { EventEmitter } from "events";
-import { Bot } from "mineflayer";
+import { Bot } from "reinarpg-bot";
 
 export type MapData = Record<number, Buffer>
 
@@ -11,7 +11,7 @@ interface MapSaverOptions {
   fileSuffix?: string
 }
 
-declare module 'mineflayer-item-map-downloader' {
+declare module 'map-downloader' {
   export function mapDownloader(bot: Bot): void;
 
   export interface MapDownloader extends EventEmitter {
@@ -38,7 +38,7 @@ declare module 'mineflayer-item-map-downloader' {
   }
 }
 
-declare module 'mineflayer' {
+declare module 'reinarpg-bot' {
   interface Bot {
     mapDownloader: MapDownloader
   }
